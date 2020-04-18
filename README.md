@@ -8,10 +8,10 @@ Libraries reqired -
 Parts used -
 
 * Lolin nodemcu V3
-* 12v stepper motor
+* Nema17 stepper motor
 * Motor driver - TMC2130/DRV8825/A4988
-* Door sensor - 2x
-* Ir receiver - Ky-022
+* Magnetic door sensor/reed switch - 2x
+* Ky-022 IR receiver
 * Power supply - 5V 1A(nodemcu) and 12V 2A(motor driver)
 
 [Demo-Ytube](https://www.youtube.com/watch?v=gUJ8PcOY5gA)
