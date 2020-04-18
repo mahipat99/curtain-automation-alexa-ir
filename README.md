@@ -14,4 +14,7 @@ Parts used -
 * Ky-022 IR receiver
 * Power supply - 5V 1A(nodemcu) and 12V 2A(motor driver)
 
+For mounting -
+2 x Pulley,timing belt,stepper motor mount
+
 [Demo-Ytube](https://www.youtube.com/watch?v=gUJ8PcOY5gA)
