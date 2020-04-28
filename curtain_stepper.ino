@@ -18,7 +18,7 @@ fauxmoESP fauxmo;
 #define dirPin 4 // direction pin
 #define stepPin 14 // steps pin
 #define enbPin 16 //enable pin
-#define IR_Recv 5 
+#define IR_Recv 5 // signal pin of IR receiver
 const int sensor1 =12; // set the sensor1 pin
 const int sensor2 =13; // set the sensor2 pin
 
@@ -168,21 +168,21 @@ void loop() {
     Serial.println(decCode);
     //switch case to use the selected remote control button
     switch (results.value){
-      case 790335: //when you press the 1 button
+      case 790335: //when you press the button 1
       Serial.println("clockwise");
       {
         digitalWrite(enbPin, LOW);
         motorDirection = 'F';
       }
       break;  
-      case 876330: //when you press the 2 button
+      case 876330: //when you press the button 2 
       Serial.println("counterclockwise");
       {
         digitalWrite(enbPin, LOW);
         motorDirection = 'R';
       }
       break;
-      case 868140: //when you press the 3 button
+      case 868140: //when you press the button 3
       Serial.println("stop");
       {
         digitalWrite(enbPin, HIGH);
